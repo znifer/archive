@@ -1,0 +1,7 @@
+LIBRARY lab8
+EXPORTS
+_sort_stdcall@16 = _sort_stdcall@0
+sort_cdecl
+@sort_fastcall@16 = _sort_fastcall@0
+_sort_stdcall_args@16
+sort_cdecl_args

@@ -1,0 +1,6 @@
+﻿  lab8c.cpp
+D:\git\labs\avs\lab8c\lab8c.cpp(107,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\git\labs\avs\lab8c\lab8c.cpp(73): warning C4731: asmSort: регистр указателя фрейма "ebp" изменен встроенным кодом на языке ассемблера
+D:\git\labs\avs\lab8c\lab8c.cpp(81): warning C4731: asmSort: регистр указателя фрейма "ebp" изменен встроенным кодом на языке ассемблера
+D:\git\labs\avs\lab8c\lab8c.cpp(92): warning C4731: asmSort: регистр указателя фрейма "ebp" изменен встроенным кодом на языке ассемблера
+  lab8c.vcxproj -> D:\git\labs\avs\lab8c\Debug\lab8c.exe

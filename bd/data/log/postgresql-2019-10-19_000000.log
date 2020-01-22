@@ -1,0 +1,70 @@
+2019-10-19 00:01:03.977 MSK [5524] ОШИБКА:  столбец "id" отношения "abiturients" уже существует
+2019-10-19 00:01:03.977 MSK [5524] ОПЕРАТОР:  alter table bstu.abiturients
+		add id int
+2019-10-19 00:01:43.980 MSK [5524] ОШИБКА:  удалить объект таблица bstu.abiturients нельзя, так как от него зависят другие объекты
+2019-10-19 00:01:43.980 MSK [5524] ПОДРОБНОСТИ:  ограничение achievments_abiturients_id_fk в отношении таблица bstu.achievments зависит от объекта таблица bstu.abiturients
+2019-10-19 00:01:43.980 MSK [5524] ПОДСКАЗКА:  Для удаления зависимых объектов используйте DROP ... CASCADE.
+2019-10-19 00:01:43.980 MSK [5524] ОПЕРАТОР:  drop table bstu.abiturients
+2019-10-19 00:03:01.349 MSK [5524] ОШИБКА:  удалить объект таблица bstu.abiturients нельзя, так как от него зависят другие объекты
+2019-10-19 00:03:01.349 MSK [5524] ПОДРОБНОСТИ:  ограничение achievments_abiturients_id_fk в отношении таблица bstu.achievments зависит от объекта таблица bstu.abiturients
+2019-10-19 00:03:01.349 MSK [5524] ПОДСКАЗКА:  Для удаления зависимых объектов используйте DROP ... CASCADE.
+2019-10-19 00:03:01.349 MSK [5524] ОПЕРАТОР:  drop table bstu.abiturients
+2019-10-19 00:45:16.056 MSK [880] ОШИБКА:  удалить объект ограничение abiturients_pk в отношении таблица bstu.abiturients нельзя, так как от него зависят другие объекты
+2019-10-19 00:45:16.056 MSK [880] ПОДРОБНОСТИ:  ограничение achievments_abiturients_id_fk в отношении таблица bstu.achievments зависит от объекта индекс bstu.abiturients_pk
+2019-10-19 00:45:16.056 MSK [880] ПОДСКАЗКА:  Для удаления зависимых объектов используйте DROP ... CASCADE.
+2019-10-19 00:45:16.056 MSK [880] ОПЕРАТОР:  alter table bstu.abiturients
+	    drop constraint abiturients_pk
+2019-10-19 00:49:11.432 MSK [880] ОШИБКА:  ошибка синтаксиса (примерное положение: ")") (символ 231)
+2019-10-19 00:49:11.432 MSK [880] ОПЕРАТОР:  create table bstu.certificate
+	(
+		code int not null
+			constraint certificate_abiturients_id_fk
+				references bstu.abiturients,
+		given_by varchar,
+		date date,
+		is_red bool not null,
+		points int,
+		constraint certificate_pk
+			unique ()
+	)
+2019-10-19 01:03:12.546 MSK [12888] ОШИБКА:  нулевое значение в столбце "is_red" нарушает ограничение NOT NULL
+2019-10-19 01:03:12.546 MSK [12888] ПОДРОБНОСТИ:  Ошибочная строка содержит (1, Бурса №5, 2019-10-18, null, 4, s).
+2019-10-19 01:03:12.546 MSK [12888] ОПЕРАТОР:  INSERT INTO "bstu"."certificate" ("code", "given_by", "date", "is_red", "points", "type") VALUES ($1, $2, $3, $4, $5, $6)
+2019-10-19 01:03:27.206 MSK [12888] ОШИБКА:  повторяющееся значение ключа нарушает ограничение уникальности "certificate_code_uindex"
+2019-10-19 01:03:27.206 MSK [12888] ПОДРОБНОСТИ:  Ключ "(code)=(1)" уже существует.
+2019-10-19 01:03:27.206 MSK [12888] ОПЕРАТОР:  INSERT INTO "bstu"."certificate" ("code", "given_by", "date", "is_red", "points", "type") VALUES ($1, $2, $3, $4, $5, $6)
+2019-10-19 01:04:10.859 MSK [12888] ОШИБКА:  столбец "code" в таблице "certificate" не существует (символ 35)
+2019-10-19 01:04:10.859 MSK [12888] ОПЕРАТОР:  INSERT INTO "bstu"."certificate" ("code", "given_by", "date", "is_red", "points", "type") VALUES ($1, $2, $3, $4, $5, $6)
+2019-10-19 01:13:19.662 MSK [9832] ОШИБКА:  INSERT или UPDATE в таблице "exams" нарушает ограничение внешнего ключа "exams_abiturients_id_fk"
+2019-10-19 01:13:19.662 MSK [9832] ПОДРОБНОСТИ:  Ключ (exams_code)=(2) отсутствует в таблице "abiturients".
+2019-10-19 01:13:19.662 MSK [9832] ОПЕРАТОР:  INSERT INTO "bstu"."exams" ("exams_code", "points_math", "points_russian", "points_physics", "points_inform", "is_inner_exams") VALUES ($1, $2, $3, $4, $5, $6)
+2019-10-19 01:51:31.105 MSK [9832] ОШИБКА:  INSERT или UPDATE в таблице "exams" нарушает ограничение внешнего ключа "exams_abiturients_id_fk"
+2019-10-19 01:51:31.105 MSK [9832] ПОДРОБНОСТИ:  Ключ (exams_code)=(2) отсутствует в таблице "abiturients".
+2019-10-19 01:51:31.105 MSK [9832] ОПЕРАТОР:  INSERT INTO "bstu"."exams" ("exams_code", "points_math", "points_russian", "points_physics", "points_inform", "is_inner_exams") VALUES ($1, $2, $3, $4, $5, $6)
+2019-10-19 01:52:58.040 MSK [9832] ОШИБКА:  INSERT или UPDATE в таблице "exams" нарушает ограничение внешнего ключа "exams_abiturients_id_fk"
+2019-10-19 01:52:58.040 MSK [9832] ПОДРОБНОСТИ:  Ключ (exams_code)=(2) отсутствует в таблице "abiturients".
+2019-10-19 01:52:58.040 MSK [9832] ОПЕРАТОР:  INSERT INTO "bstu"."exams" ("exams_code", "points_math", "points_russian", "points_physics", "points_inform", "is_inner_exams") VALUES ($1, $2, $3, $4, $5, $6)
+2019-10-19 02:07:06.554 MSK [9832] ОШИБКА:  INSERT или UPDATE в таблице "exams" нарушает ограничение внешнего ключа "exams_abiturients_id_fk"
+2019-10-19 02:07:06.554 MSK [9832] ПОДРОБНОСТИ:  Ключ (exams_code)=(3) отсутствует в таблице "abiturients".
+2019-10-19 02:07:06.554 MSK [9832] ОПЕРАТОР:  INSERT INTO "bstu"."exams" ("exams_code", "points_math", "points_russian", "points_physics", "points_inform", "is_inner_exams") VALUES ($1, $2, $3, $4, $5, $6)
+2019-10-19 02:25:56.352 MSK [880] ОШИБКА:  столбец "code" содержит значения NULL
+2019-10-19 02:25:56.352 MSK [880] ОПЕРАТОР:  alter table bstu.exams
+		add code int not null
+2019-10-19 02:26:53.722 MSK [880] ОШИБКА:  столбец "code" содержит значения NULL
+2019-10-19 02:26:53.722 MSK [880] ОПЕРАТОР:  alter table bstu.exams
+		add code int not null
+2019-10-19 02:27:31.671 MSK [9832] ОШИБКА:  повторяющееся значение ключа нарушает ограничение уникальности "exams_code_uindex"
+2019-10-19 02:27:31.671 MSK [9832] ПОДРОБНОСТИ:  Ключ "(abit_id)=(1)" уже существует.
+2019-10-19 02:27:31.671 MSK [9832] ОПЕРАТОР:  UPDATE "bstu"."exams" SET "abit_id" = $1 WHERE "code" = $2
+2019-10-19 02:37:53.260 MSK [880] ОШИБКА:  удалить объект индекс bstu.target_agreement_pk нельзя, так как он нужен объекту ограничение target_agreement_pk в отношении таблица bstu.target_agreement
+2019-10-19 02:37:53.260 MSK [880] ПОДСКАЗКА:  Однако можно удалить ограничение target_agreement_pk в отношении таблица bstu.target_agreement.
+2019-10-19 02:37:53.260 MSK [880] ОПЕРАТОР:  drop index bstu.target_agreement_pk
+2019-10-19 07:30:59.072 MSK [880] ОШИБКА:  столбец "dorm_needed" содержит значения NULL
+2019-10-19 07:30:59.072 MSK [880] ОПЕРАТОР:  alter table bstu.abiturients
+		add dorm_needed bool not null
+2019-10-19 09:08:34.369 MSK [880] ОШИБКА:  в целевой внешней таблице "application_on_direction" нет ограничения уникальности, соответствующего данным ключам
+2019-10-19 09:08:34.369 MSK [880] ОПЕРАТОР:  alter table bstu.applications
+		add constraint applications_application_on_direction_application_code_fk
+			foreign key (code) references bstu.application_on_direction (application_code)
+2019-10-19 09:37:41.198 MSK [8712] ОШИБКА:  значение не умещается в тип character(1)
+2019-10-19 09:37:41.198 MSK [8712] ОПЕРАТОР:  INSERT INTO "bstu"."directions" ("code", "name", "pass_points_math", "pass_points_russian", "pass_points_third_subject", "third_subject", "b_places", "p_places", "institute_code") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
