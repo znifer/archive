@@ -1,0 +1,2 @@
+E:\git\labs\s\lab8\x64\Debug\lab8.exe
+E:\git\labs\s\lab8\x64\Debug\lab8.pdb

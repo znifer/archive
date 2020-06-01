@@ -1,0 +1,3 @@
+﻿  tcpClient.cpp
+E:\git\labs\s\lab4\tcpClient\tcpClient.cpp(60,10): warning C4477: "printf": в строке форматирования "%hu" требуется аргумент типа "unsigned int", но вариативный аргумент "1" имеет тип "const char *"
+  tcpClient.vcxproj -> E:\git\labs\s\lab4\tcpClient\Debug\tcpClient.exe

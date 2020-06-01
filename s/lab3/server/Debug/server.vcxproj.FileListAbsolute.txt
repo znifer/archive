@@ -1,0 +1,2 @@
+E:\git\labs\s\lab3\server\Debug\server.exe
+E:\git\labs\s\lab3\server\Debug\server.pdb

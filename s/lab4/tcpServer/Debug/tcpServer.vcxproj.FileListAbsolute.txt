@@ -1,0 +1,2 @@
+E:\git\labs\s\lab4\tcpServer\Debug\tcpServer.exe
+E:\git\labs\s\lab4\tcpServer\Debug\tcpServer.pdb

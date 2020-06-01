@@ -1,0 +1,15 @@
+main.o
+mainwindow.o
+mailhmac.o
+mailattachment.o
+mailmessage.o
+mailsmtp.o
+mailpop3.o
+mailpop3reply.o
+moc_mainwindow.o
+moc_mailsmtp.o
+moc_mailsmtp_p.o
+moc_mailpop3.o
+moc_mailpop3_p.o
+moc_mailpop3reply.o
+moc_mailpop3reply_p.o

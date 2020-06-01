@@ -1,0 +1,26 @@
+﻿Построение начато 3/30/2020 1:41:37 PM.
+Проект "Z:\ipxclient\ipxclient.vcxproj" в узле 2 (целевые объекты build).
+InitializeBuildStatus:
+  Создание "Debug\ipxclient.unsuccessfulbuild", так как было задано "AlwaysCreate".
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+  main.cpp
+z:\ipxclient\main.cpp(81): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+z:\ipxclient\main.cpp(102): warning C4018: <: несоответствие типов со знаком и без знака
+z:\ipxclient\main.cpp(59): warning C4101: tmp: неиспользованная локальная переменная
+z:\ipxclient\main.cpp(141): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _itoa. See online help for details.
+          c:\program files\microsoft visual studio 10.0\vc\include\stdlib.h(867): см. объявление "itoa"
+Link:
+  C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Z:\ipxclient\Debug\ipxclient.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\ipxclient.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"Z:\ipxclient\Debug\ipxclient.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Z:\ipxclient\Debug\ipxclient.lib" /MACHINE:X86 Debug\main.obj
+  LINK : не найден или не выполнена сборка Z:\ipxclient\Debug\ipxclient.exe при последней инкрементной компоновке; выполняется полная компоновка
+  ipxclient.vcxproj -> Z:\ipxclient\Debug\ipxclient.exe
+Manifest:
+  C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"Z:\ipxclient\Debug\ipxclient.exe;#1" /manifest Debug\ipxclient.exe.intermediate.manifest
+FinalizeBuildStatus:
+  Файл "Debug\ipxclient.unsuccessfulbuild" удаляется.
+  Обращение к "Debug\ipxclient.lastbuildstate".
+Построение проекта "Z:\ipxclient\ipxclient.vcxproj" завершено (целевые объекты build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:02.72

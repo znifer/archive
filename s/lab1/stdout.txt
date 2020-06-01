@@ -1,0 +1,10 @@
+DOSBox version 0.74-3
+Copyright 2002-2019 DOSBox Team, published under GNU GPL.
+---
+CONFIG:Loading primary settings from config file C:\Users\znifer\AppData\Local\DOSBox\dosbox-0.74-3.conf
+CONFIG:Loading additional settings from config file ./server.conf
+MIDI:Opened device:win32
+IPXSERVER: Connect from 127.0.0.1
+IPX: Connected to server.  IPX address is 127:0:0:1:232:183
+IPXSERVER: Connect from 127.0.0.1
+IPXSERVER: Connect from 127.0.0.1

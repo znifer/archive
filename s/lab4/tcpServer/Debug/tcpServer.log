@@ -1,0 +1,4 @@
+﻿  tcpServer.cpp
+E:\git\labs\s\lab4\tcpServer\tcpServer.cpp(106,9): warning C4477: "printf": в строке форматирования "%hu" требуется аргумент типа "unsigned int", но вариативный аргумент "1" имеет тип "const char *"
+E:\git\labs\s\lab4\tcpServer\tcpServer.cpp(59): warning C4715: sendEcho: значение возвращается не при всех путях выполнения
+  tcpServer.vcxproj -> E:\git\labs\s\lab4\tcpServer\Debug\tcpServer.exe

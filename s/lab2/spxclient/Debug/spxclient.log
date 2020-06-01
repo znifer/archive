@@ -1,0 +1,17 @@
+﻿Построение начато 3/30/2020 2:22:19 PM.
+Проект "Z:\spxclient\spxclient.vcxproj" в узле 2 (целевые объекты build).
+InitializeBuildStatus:
+  Создание "Debug\spxclient.unsuccessfulbuild", так как было задано "AlwaysCreate".
+ClCompile:
+  Для всех выходных данных обновления не требуется.
+Link:
+  Для всех выходных данных обновления не требуется.
+  spxclient.vcxproj -> Z:\spxclient\Debug\spxclient.exe
+FinalizeBuildStatus:
+  Файл "Debug\spxclient.unsuccessfulbuild" удаляется.
+  Обращение к "Debug\spxclient.lastbuildstate".
+Построение проекта "Z:\spxclient\spxclient.vcxproj" завершено (целевые объекты build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:00.52

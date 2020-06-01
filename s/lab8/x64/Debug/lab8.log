@@ -1,0 +1,4 @@
+﻿  main.cpp
+E:\git\labs\s\lab8\main.cpp(95,85): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+E:\git\labs\s\lab8\main.cpp(111): warning C4715: ServeClient: значение возвращается не при всех путях выполнения
+  lab8.vcxproj -> E:\git\labs\s\lab8\x64\Debug\lab8.exe

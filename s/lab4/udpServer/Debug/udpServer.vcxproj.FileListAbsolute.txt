@@ -1,0 +1,2 @@
+E:\git\labs\s\lab4\udpServer\Debug\udpServer.exe
+E:\git\labs\s\lab4\udpServer\Debug\udpServer.pdb

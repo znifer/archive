@@ -1,0 +1,2 @@
+E:\git\labs\s\lab4\tcpClient\Debug\tcpClient.exe
+E:\git\labs\s\lab4\tcpClient\Debug\tcpClient.pdb
