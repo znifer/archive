@@ -1,0 +1,242 @@
+MCS-51 MACRO ASSEMBLER    LAB1T2                                                                    03/27/<0   PAGE    1
+
+
+DOS 5.0 (038-N) MCS-51 MACRO ASSEMBLER, V2.3
+OBJECT MODULE PLACED IN LAB1T2.OBJ
+ASSEMBLER INVOKED BY:  C:\MCS8052\ASM51.EXE LAB1T2.ASM
+                       
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     org 0h
+0000 C29F              2     CLR SM0
+0002 D29E              3     SETB SM1; 2 pefhl, 8 ahr, qrno/qr`pr, wermnqr|
+                       4     
+0004 0200CC            5     jmp start
+                       6     
+                       7     colScan0:
+0007 309043            8             JNB P1.0, gotKey1
+000A 309146            9             JNB P1.1, gotKey2
+000D 309249           10             JNB P1.2, gotKey3
+0010 30937C           11             JNB P1.3, gotKeyC
+0013 30947F           12             JNB P1.4, gotKeyD
+0016 22               13     ret
+                      14     
+                      15     colScan1:
+0017 309045           16             JNB P1.0, gotKey4
+001A 309148           17             JNB P1.1, gotKey5
+001D 30924B           18             JNB P1.2, gotKey6
+0020 309378           19             JNB P1.3, gotKeyE
+0023 30947B           20             JNB P1.4, gotKeyF
+0026 22               21     ret
+                      22     
+                      23     colScan2:
+0027 309047           24             JNB P1.0, gotKey7
+002A 30914A           25             JNB P1.1, gotKey8
+002D 30924D           26             JNB P1.2, gotKey9
+0030 309374           27             JNB P1.3, gotKeyG
+0033 309477           28             JNB P1.4, gotKeyH
+0036 22               29     ret
+                      30     
+                      31     colScan3:
+0037 309049           32             JNB P1.0, gotKeyA
+003A 30910A           33             JNB P1.1, gotKey0
+003D 309249           34             JNB P1.2, gotKeyB
+0040 309370           35             JNB P1.3, gotKeyI
+0043 309473           36             JNB P1.4, gotKeyJ
+0046 22               37     ret
+                      38     
+                      39     gotKey0:
+0047 7830             40             mov r0, #48
+0049 1200BF           41             call print
+004C 22               42     ret
+                      43     
+                      44     gotKey1:
+004D 7831             45             mov r0, #49
+004F 1200BF           46             call print
+0052 22               47     ret
+                      48     
+                      49     gotKey2:
+0053 7832             50             mov r0, #50
+MCS-51 MACRO ASSEMBLER    LAB1T2                                                                    03/27/<0   PAGE    2
+
+
+LOC  OBJ            LINE     SOURCE
+
+0055 1200BF           51             call print
+0058 22               52     ret
+                      53     
+                      54     gotKey3:
+0059 7833             55             mov r0, #51
+005B 1200BF           56             call print
+005E 22               57     ret
+                      58     
+                      59     gotKey4:
+005F 7834             60             mov r0, #52
+0061 1200BF           61             call print
+0064 22               62     ret
+                      63     
+                      64     gotKey5:
+0065 7835             65             mov r0, #53
+0067 1200BF           66             call print
+006A 22               67     ret
+                      68     
+                      69     gotKey6:
+006B 7836             70             mov r0, #54
+006D 1200BF           71             call print
+0070 22               72     ret
+                      73     
+                      74     gotKey7:
+0071 7837             75             mov r0, #55
+0073 1200BF           76             call print
+0076 22               77     ret
+                      78     
+                      79     gotKey8:
+0077 7838             80             mov r0, #56
+0079 1200BF           81             call print
+007C 22               82     ret
+                      83     
+                      84     gotKey9:
+007D 7839             85             mov r0, #57
+007F 1200BF           86             call print
+0082 22               87     ret
+                      88     
+                      89     gotKeyA:
+0083 7841             90             mov r0, #65
+0085 1200BF           91             call print
+0088 22               92     ret
+                      93     
+                      94     gotKeyB:
+0089 7842             95             mov r0, #66
+008B 1200BF           96             call print
+008E 22               97     ret
+                      98     
+                      99     gotKeyC:
+008F 7843            100             mov r0, #67
+0091 1200BF          101             call print
+0094 22              102     ret
+                     103     
+                     104     gotKeyD:
+0095 7844            105             mov r0, #68
+MCS-51 MACRO ASSEMBLER    LAB1T2                                                                    03/27/<0   PAGE    3
+
+
+LOC  OBJ            LINE     SOURCE
+
+0097 1200BF          106             call print
+009A 22              107     ret
+                     108     
+                     109     gotKeyE:
+009B 7845            110             mov r0, #69
+009D 1200BF          111             call print
+00A0 22              112     ret
+                     113     
+                     114     gotKeyF:
+00A1 7846            115             mov r0, #70
+00A3 1200BF          116             call print
+00A6 22              117     ret
+                     118     
+                     119     gotKeyG:
+00A7 7847            120             mov r0, #71
+00A9 1200BF          121             call print
+00AC 22              122     ret
+                     123     
+                     124     gotKeyH:
+00AD 7848            125             mov r0, #72
+00AF 1200BF          126             call print
+00B2 22              127     ret
+                     128     
+                     129     gotKeyI:
+00B3 7849            130             mov r0, #73
+00B5 1200BF          131             call print
+00B8 22              132     ret
+                     133     
+                     134     gotKeyJ:
+00B9 784A            135             mov r0, #74
+00BB 1200BF          136             call print
+00BE 22              137     ret
+                     138     
+                     139     print:
+00BF E8              140             mov a, r0
+00C0 A2D0            141             MOV C, P
+00C2 92E7            142             MOV ACC.7, C
+00C4 F599            143             MOV SBUF, A
+00C6 3099FD          144             JNB TI, $
+00C9 C299            145             CLR TI
+00CB 22              146     ret
+                     147     
+                     148     start:
+00CC C280            149             CLR P0.0        
+00CE 1107            150             CALL colScan0
+00D0 D280            151             SETB P0.0
+                     152     
+                     153             
+                     154     
+00D2 C281            155             CLR P0.1        
+00D4 1117            156             CALL colScan1
+00D6 D281            157             SETB P0.1
+                     158     
+00D8 C282            159             CLR P0.2        
+00DA 1127            160             CALL colScan2
+MCS-51 MACRO ASSEMBLER    LAB1T2                                                                    03/27/<0   PAGE    4
+
+
+LOC  OBJ            LINE     SOURCE
+
+00DC D282            161             SETB P0.2
+                     162     
+00DE C283            163             CLR P0.3
+                     164             
+00E0 1137            165             CALL colScan3
+00E2 D283            166             SETB P0.3
+                     167             
+00E4 80E6            168             jmp start
+                     169     end
+MCS-51 MACRO ASSEMBLER    LAB1T2                                                                    03/27/<0   PAGE    5
+
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E     T Y P E   V A L U E       A T T R I B U T E S
+
+ACC. . . .  D ADDR    00E0H   A       
+COLSCAN0 .  C ADDR    0007H   A       
+COLSCAN1 .  C ADDR    0017H   A       
+COLSCAN2 .  C ADDR    0027H   A       
+COLSCAN3 .  C ADDR    0037H   A       
+GOTKEY0. .  C ADDR    0047H   A       
+GOTKEY1. .  C ADDR    004DH   A       
+GOTKEY2. .  C ADDR    0053H   A       
+GOTKEY3. .  C ADDR    0059H   A       
+GOTKEY4. .  C ADDR    005FH   A       
+GOTKEY5. .  C ADDR    0065H   A       
+GOTKEY6. .  C ADDR    006BH   A       
+GOTKEY7. .  C ADDR    0071H   A       
+GOTKEY8. .  C ADDR    0077H   A       
+GOTKEY9. .  C ADDR    007DH   A       
+GOTKEYA. .  C ADDR    0083H   A       
+GOTKEYB. .  C ADDR    0089H   A       
+GOTKEYC. .  C ADDR    008FH   A       
+GOTKEYD. .  C ADDR    0095H   A       
+GOTKEYE. .  C ADDR    009BH   A       
+GOTKEYF. .  C ADDR    00A1H   A       
+GOTKEYG. .  C ADDR    00A7H   A       
+GOTKEYH. .  C ADDR    00ADH   A       
+GOTKEYI. .  C ADDR    00B3H   A       
+GOTKEYJ. .  C ADDR    00B9H   A       
+P. . . . .  B ADDR    00D0H.0 A       
+P0 . . . .  D ADDR    0080H   A       
+P1 . . . .  D ADDR    0090H   A       
+PRINT. . .  C ADDR    00BFH   A       
+SBUF . . .  D ADDR    0099H   A       
+SM0. . . .  B ADDR    0098H.7 A       
+SM1. . . .  B ADDR    0098H.6 A       
+START. . .  C ADDR    00CCH   A       
+TI . . . .  B ADDR    0098H.1 A       
+
+
+REGISTER BANK(S) USED: 0
+
+ASSEMBLY COMPLETE, NO ERRORS FOUND
