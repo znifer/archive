@@ -1,0 +1,3 @@
+DN,objectClass,sAMAccountName,sn,givenName,userPrincipalName
+"CN=Андрей Калиберда, ou=employee, DC=kovalyov, DC=com",user,andrey.kalib,Калиберда,Андрей,andrey.kalib@kovalyov.com
+"CN=Юрий Шелаев, ou=employee, DC=kovalyov, DC=com",user,juriy.shell,Шелаев,Юрий,juriy.shell@kovalyov.com
