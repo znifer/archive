@@ -1,8 +1,13 @@
-Django>=3.0,<4.0
-djangorestframework >=3.10
-markdown
+django
+djangorestframework
+
 django-filter
-drf-yasg
+
+django-cors-headers
+django_extensions
+psycopg2
+
+dj-database-url
+djangorestframework-simplejwt
 Pillow
-django-extensions
-psycopg2-binary>=2.8
+drf-yasg
