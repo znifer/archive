@@ -32,3 +32,9 @@
 *.app
 .vs
 *.pyc
+
+.idea
+.venv
+
+.Debug
+.Release
