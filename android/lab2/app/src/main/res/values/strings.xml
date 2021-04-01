@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">lab2</string>
+    <string name="label1">Вопрос 1</string>
+    <string name="label2">Вопрос 2</string>
+    <string name="label3">Вопрос 3</string>
+    <string name="label4">Вопрос 4</string>
+    <string name="label5">Вопрос 5</string>
+    <string name="label6">Вопрос 6</string>
+    <string name="label7">Вопрос 7</string>
+    <string name="label8">Вопрос 8</string>
+    <string name="label9">Вопрос 9</string>
+    <string name="label10">Вопрос 10</string>
+
+    <string name="text1">Текст вопроса номер 1. Почему?</string>
+    <string name="text2">Текст вопроса номер 2. Почему?</string>
+    <string name="text3">Текст вопроса номер 3. Почему?</string>
+    <string name="text4">Текст вопроса номер 4. Почему?</string>
+    <string name="text5">Текст вопроса номер 5. Почему?</string>
+    <string name="text6">Текст вопроса номер 6. Почему?</string>
+    <string name="text7">Текст вопроса номер 7. Почему?</string>
+    <string name="text8">Текст вопроса номер 8. Почему?</string>
+    <string name="text9">Текст вопроса номер 9. Почему?</string>
+    <string name="text10">Текст вопроса номер 10. Почему?</string>
+
+    <string name="ac1">11 ответов</string>
+    <string name="ac2">22 ответов</string>
+    <string name="ac3">33 ответов</string>
+    <string name="ac4">44 ответов</string>
+    <string name="ac5">55 ответов</string>
+    <string name="ac6">66 ответов</string>
+    <string name="ac7">77 ответов</string>
+    <string name="ac8">88 ответов</string>
+    <string name="ac9">99 ответов</string>
+    <string name="ac10">1010 ответов</string>
+</resources>
