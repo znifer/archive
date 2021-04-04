@@ -1,0 +1,33 @@
+version: "3"
+services:
+  fetcher:
+    build:
+      dockerfile: Dockerfile
+      context: fetcher
+    command: uvicorn main:app --reload --host 0.0.0.0
+    restart: always
+    ports:
+      - "8000:8000"
+  users:
+    build: 
+      dockerfile: Dockerfile
+      context: users
+    ports: 
+      - "8001:8001"
+    restart: always
+  storage:
+    build: 
+      dockerfile: Dockerfile
+      context: storage
+    ports: 
+      - "8002:8002"
+    restart: always
+  searcher:
+    build:
+      dockerfile: Dockerfile
+      context: searcher
+    command: uvicorn searcher:app --reload --host 0.0.0.0
+    restart: always
+    ports:
+      - "8003:8003" 
+      
